@@ -1,0 +1,114 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+	padding: 0;
+    margin: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+header {
+  background: rgba(0,0, 0, 0.3) url('../images/header-background.jpeg');
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 700px;
+  .top-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+    }
+    nav {
+      a {
+        color: white;
+        border: 1px solid transparent;
+        padding: 10px 15px;
+        &:hover {
+          border: 1px solid white;
+          border-radius: 25px;
+          background-color: white;
+          color: black;
+        }
+      }
+      
+    }
+  }
+  .hero{
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      color: white;
+      width: 490px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .subtitle {
+      font-weight: 300;
+      font-size: 24px;
+      color: white;
+      margin-bottom: 30px;
+    }
+    button {
+      background-color: #FF4E50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 25px;
+      &:hover{
+        background-color: darken($color: #FF4E50, $amount: 10%);
+      }
+    }
+  }
+}
