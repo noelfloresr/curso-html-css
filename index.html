@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Curso de Html y CSS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My first site</title>
   </head>
   <body>
     <header>
@@ -26,96 +26,109 @@
         </div>
         <div class="hero">
           <h1>Share your holiday dream</h1>
-          <p class="subtitle">And find the perfect partner to fullfill it</p>
-          <button>Find your holiday partner</button>
+          <p>And find the perfect partner to fullfill it</p>
+          <button class="red-button">Find your holiday partner</button>
         </div>
       </div>
     </header>
+
     <section class="how-it-works">
       <div class="container">
         <h2>How it works?</h2>
         <div class="cards-container">
           <div class="card">
             <span class="badge">Step 1</span>
-            <h3>Sed leo enim, condimentum</h3>
+            <h3>Title one</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-              libero atque doloremque, cumque tempora praesentium.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+              deleniti similique aperiam ratione natus blanditiis dicta. Placeat
+              veritatis alias dicta dignissimos culpa provident, aliquam quia
+              fugiat expedita, aperiam commodi iusto.
             </p>
           </div>
           <div class="card">
             <span class="badge">Step 2</span>
-            <h3>Morbi velit risus</h3>
+            <h3>Title two</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-              libero atque doloremque, cumque tempora praesentium. Illum
-              blanditiis modi veritatis, nemo vero corrupti.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+              deleniti similique aperiam ratione natus blanditiis dicta. Placeat
+              veritatis alias dicta dignissimos culpa provident, aliquam quia
+              fugiat expedita, aperiam commodi iusto.
             </p>
           </div>
           <div class="card">
             <span class="badge">Step 3</span>
-            <h3>Sed leo enim, condimentum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3>Title three</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+              deleniti similique aperiam ratione natus blanditiis dicta. Placeat
+              veritatis alias dicta dignissimos culpa provident, aliquam quia
+              fugiat expedita, aperiam commodi iusto.
+            </p>
           </div>
         </div>
       </div>
     </section>
+
     <section class="meet-a-partner">
       <div class="container">
         <h2>Meet a partner for your best holiday</h2>
+
         <div class="cards-container">
           <div class="card">
             <div class="image-container">
-              <img src="assets/images/Bradley.png" alt="" />
+              <img src="images/Bradley.png" alt="Bradley picture" />
               <i class="fa-solid fa-music"></i>
             </div>
-            <h4>Bradley Hunter</h4>
+            <h3>Bradly Hunter</h3>
             <p>Based in Chicago. I love playing tennis and loud music.</p>
           </div>
+
           <div class="card">
             <div class="image-container">
-              <img src="assets/images/Marie.png" alt="" />
+              <img src="images/Marie.png" alt="Marie picture" />
               <i class="fa-solid fa-paintbrush"></i>
             </div>
-            <h4>Marie Bennett</h4>
+            <h3>Marie Bennett</h3>
             <p>
               Currently living in Colorado. Lover of art, languages and
               traveling..
             </p>
           </div>
+
           <div class="card">
             <div class="image-container">
-              <img src="assets/images/Diana.png" alt="" />
+              <img src="images/Diana.png" alt="Diana picture" />
               <i class="fa-solid fa-camera"></i>
             </div>
-            <h4>Diana Wells</h4>
+            <h3>Diana Wells</h3>
             <p>
               Living in Athens, Grece. I love black and white classics, chillout
               music and green tea.
             </p>
           </div>
+
           <div class="card">
             <div class="image-container">
-              <img src="assets/images/Christopher.png" alt="" />
+              <img src="images/Christopher.png" alt="Christopher picture" />
               <i class="fa-solid fa-plane-departure"></i>
             </div>
-            <h4>Christopher Pierce</h4>
+            <h3>Christopher Pierce</h3>
             <p>
               Star Wars fanatic. I have a persistent enthusiasm to create new
               things.
             </p>
           </div>
         </div>
-        <button>See other partners</button>
       </div>
     </section>
+
     <section class="discover-holiday-activity">
       <div class="container">
         <h2>Discover holiday Activity</h2>
         <div class="cards-container">
           <div class="row">
             <div class="card">
-              <!-- <img src="assets/images/sports.jpg" alt="" /> -->
               <h4>Sports and Activities</h4>
             </div>
             <div class="card">
@@ -144,6 +157,37 @@
         </div>
       </div>
     </section>
-    <footer></footer>
+
+    <section class="create-your-holiday">
+      <div class="container">
+        <h2>Create your holiday</h2>
+        <p>Hi! What are your holiday interests?</p>
+        <form action="">
+          <input type="text" placeholder="Enter your interests" />
+          <button class="red-button">Search Partner</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <span class="logo-text">Dreamshare</span>
+        <div class="footer-navigation">
+          <span><b>Company</b></span>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Terms and Privacy</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <div class="footer-navigation">
+          <span><b>Partners</b></span>
+        </div>
+        <img src="./images/areto-logo.JPG" alt="logo footer" />
+      </div>
+    </footer>
   </body>
 </html>

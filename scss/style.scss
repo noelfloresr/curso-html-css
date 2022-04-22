@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 52px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 25px;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button.red-button {
+  background-color: #FF4E50;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($color: #FF4E50, $amount: 10%);
+  }
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  @media (min-width:576px) {
+    width: 540px;
+  }
+
+  @media (min-width:768px) {
+    width: 720px;
+  }
+
+  @media (min-width:992px) {
+    width: 960px;
+  }
+
+  @media (min-width:1200px) {
+    width: 1140px;
+  }
+}
+
+header {
+  background: rgba($color: #000, $alpha: 0.5) url(../images/header-background.jpeg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 700px;
+  .top-navigation {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 30px;
+    .logo{
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    nav {
+      a {
+        color: white;
+        padding: 10px 15px;
+        border-radius: 25px;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+  .hero{
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    h1 {
+      text-transform: uppercase;
+      width: 490px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+  }
+}
+
+.how-it-works {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .cards-container {
+    display: flex;
+    .card {
+      min-height: 400px;
+      padding: 30px;
+      padding-top: 15%;
+      margin: 15px;
+      color: white;
+      .badge {
+        background-color: #ff4e50;
+        padding: 10px 15px;
+        border-radius: 25px;
+        margin-bottom: 15px;
+        display: inline-block;
+      }
+      h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &:nth-child(1) {
+        background: url(../images/step1.jpg) rgba($color: #000000, $alpha: 0.3);
+        background-blend-mode: color;
+        background-size: cover;
+      }
+      &:nth-child(2) {
+        background: url(../images/step2.jpg) rgba($color: #000000, $alpha: 0.3);
+        background-blend-mode: color;
+        background-size: cover;
+      }
+      &:nth-child(3) {
+        background: url(../images/step3.jpg) rgba($color: #000000, $alpha: 0.3);
+        background-blend-mode: color;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.meet-a-partner {
+  margin-bottom: 100px;
+  .cards-container {
+    display: flex;
+    h3 {
+      color: #444444;
+      margin-bottom: 15px;
+    }
+    .card {
+      flex: 1;
+      margin: 15px;
+      text-align: center;
+      .image-container {
+        margin-bottom: 15px;
+        position: relative;
+        i {
+          position: absolute;
+          right: calc(50% - 60px);
+          bottom: 5px;
+          color: white;
+          font-size: 14px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          padding: 7px;
+        }
+      }
+      &:nth-child(1) {
+        .image-container {
+          i {
+            background-color: #ff4e50;
+          }
+        }
+      }
+      &:nth-child(2) {
+        .image-container {
+          i {
+            background-color: #19d4ca;
+          }
+        }
+      }
+      &:nth-child(3) {
+        .image-container {
+          i {
+            background-color: #ffa710;
+          }
+        }
+      }
+      &:nth-child(4) {
+        .image-container {
+          i {
+            background-color: #667df3;
+          }
+        }
+      }
+    }
+  }
+}
+
+.discover-holiday-activity {
+  margin-bottom: 100px;
+  .container {
+    .cards-container {
+      .row {
+        display: flex;
+        .card {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 350px;
+          height: 350px;
+          margin: 15px;
+          cursor: pointer;
+          h4 {
+            display: none;
+          }
+          &:hover {
+            h4 {
+              display: block;
+              background-color: rgba($color: #000000, $alpha: 0.5);
+              color: white;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+        &:nth-child(1) {
+          .card {
+            &:nth-child(1) {
+              background: url('../images/sports.jpg');
+              background-size: cover;
+            }
+            &:nth-child(2) {
+              background: url('../images/wellness.jpg');
+              background-size: cover;
+            }
+            &:nth-child(3) {
+              background: url('../images/extreme.jpg');
+              background-size: cover;
+            }
+          }
+        }
+        &:nth-child(2) {
+          .card {
+            &:nth-child(1) {
+              background: url('../images/games.jpg');
+              background-size: cover;
+              flex: 1;
+            }
+            &:nth-child(2) {
+              background: url('../images/culture.jpg');
+              background-size: cover;
+              flex: 2.1;
+            }
+          }
+        }
+        &:nth-child(3) {
+          .card {
+            &:nth-child(1) {
+              background: url('../images/enjoyment.jpg');
+              background-size: cover;
+              flex: 2.1;
+            }
+            &:nth-child(2) {
+              background: url('../images/traveling.jpg');
+              background-size: cover;
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.create-your-holiday{
+  text-align: center;
+  margin-bottom: 80px;
+  p {
+    margin-bottom: 30px;
+  }
+  form {
+    input {
+      padding: 10px 15px;
+      border: 1px solid;
+      width: 300px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+  }
+}
+
+footer {
+  border-top: 2px solid #ff4e50;
+  padding: 30px 0;
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .logo-text {
+    text-transform: uppercase;
+    color: #FF4E50;
+  }
+  ul {
+    margin-top: 15px;
+    li {
+      list-style: none;
+      a {
+        color: #666666;
+        display: block;
+        padding: 5px 5px 5px 0;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+}
